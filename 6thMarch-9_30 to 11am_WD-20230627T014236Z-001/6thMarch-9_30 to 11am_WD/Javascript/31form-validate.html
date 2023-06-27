@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <form onsubmit="return validate()">
+
+    Name: <input type="text" id="nm" >
+    
+    <span id="nmErr"></span>
+    <br><br>
+    Mobile: <input type="text" id="mb" ><br><br>
+    
+
+    <!-- <input type="submit" onclick=" return validate()"> -->
+
+    <input type="submit" >
+
+   </form>
+
+    <script>
+
+
+
+        n = document.getElementById('nm');
+        nSpan = document.getElementById('nmErr');
+        m = document.getElementById('mb');
+
+        // 
+
+        n_exp = /^[a-zA-Z]+$/;
+
+        document.write(n.value);
+
+
+        function validate()
+        {
+            if(n.value == "")
+            {
+                // alert("Name Required...!");
+
+                // document.write("Name Required...!");
+
+                nSpan.innerHTML =("* Name Required...!");
+                nSpan.style.color ="red";
+
+                n.style.border ="2px solid red";
+
+                return false;
+            }
+
+            if(!n_exp.test(n.value))
+            {
+                nSpan.innerHTML =("* only alphabests...");
+                return false;
+            }
+
+            // else 
+            // {
+            //     nSpan.innerHTML = "";
+            //     n.style.border ="2px solid green";
+            // }
+
+            // if(m.value == "")
+            // {
+            //     alert("Mobile Required...!");
+            //     return false;
+            // }
+        }
+
+
+    </script>
+    
+</body>
+</html>

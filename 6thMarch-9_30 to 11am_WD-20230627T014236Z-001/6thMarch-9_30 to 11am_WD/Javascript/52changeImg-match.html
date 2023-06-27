@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="images/banner3.jpg" alt="No image" height="400px"  width="100%" id="t" onclick="changeImg()">
+
+    <button onclick="changeImg()">></button>
+
+    <script>
+
+        img_tag = document.getElementById('t');
+
+    //    alert( img_tag.src );
+
+    //document.write(img_tag.src);
+
+    //    if(img.src == 'images/banner3.jpg')
+    //     {
+    //         img_tag.src = "images/w.jpeg";
+    //     }
+
+   function changeImg()
+   
+   {
+
+    if(img_tag.src.match("images/banner3.jpg"))
+        {
+            img_tag.src = "images/w.jpeg";
+        }
+
+        else if(img_tag.src.match("images/w.jpeg"))
+        {
+            img_tag.src = "images/bunty.png";
+        }
+
+        else 
+        {
+            img_tag.src = "images/banner3.jpg";
+        }
+   }
+
+   
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,8 @@
+@import "style2.css";
+
+@import url('import.css');
+
+h1 
+{
+    height: 300px;
+}

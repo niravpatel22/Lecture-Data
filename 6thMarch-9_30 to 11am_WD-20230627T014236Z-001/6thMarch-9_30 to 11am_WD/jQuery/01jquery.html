@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    
+    <!-- 
+        
+        jQuery ===> javascript framework 
+
+    Framework: write less do more 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    Syntax:
+
+    x =document.getElementId();
+     document.getElementsByClassName();
+      document.getElementsByTagName();
+       document.getElementsByName();
+       document.querySelector('.className');
+       document.querySelector('#idName')
+
+$(selector)==> keyword,classname,tagname,idname
+
+$(document)/$(this)
+x = $("tagName")
+$(".className")
+$("#idName")
+
+varName.methods();
+
+
+
+-->
+
+<p class="x" id="x">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus totam inventore autem magni, rerum dolorem quae consequatur quibusdam, ducimus eius, labore quis culpa? Deleniti ut ullam ea sed obcaecati velit!
+</p>
+
+<button class="b1">Hide</button>
+
+<button id="b1">Show</button>
+
+<button id="b2">Hide/Show</button>
+
+<script>
+    // $('#x').hide();
+
+    // $('p').show();
+
+    $('.b1').click(function (){
+        $('p').hide('fast',function(){
+            alert("hide");
+        })
+    });
+    
+    
+    $('#b1').click(function (){
+        $('#x').show(2000);
+    })
+
+    $('#b2').click(function (){
+        $('#x').toggle(1000);
+    })
+
+    // $('p').click(function (){
+    //     $('p').hide();
+    // })
+
+    $(document).click(function (){
+        $('p').fadeTo("slow",0.4);
+    })
+    
+    
+</script>
+
+
+</body>
+</html>

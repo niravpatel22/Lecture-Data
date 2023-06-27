@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Array: collection of diffrent types of values
+
+    Syntax:
+     var varName = [val1,val2,...,valN];
+
+     document.write(varName);//val1,val2,...,valN
+
+     Array INDEX/KEY/Positions starts always with ZERO.
+
+     varName[0] = val1
+     varName[1] = val2
+     varName[N] = valN
+
+     x = ["bhavesh",23,"WD"];
+
+
+     document.write(x);//bhavesh",23,"WD"
+     x[0] = bhavesh;
+
+     Array size = Total no of Values Stored 
+     SIZE = 3
+
+     x.length = array size =3  -->
+
+
+
+    <script>
+
+
+        x = ["bhavesh",23,"WD",45];
+
+
+        // document.write(x);//bhavesh",23,"WD
+        // document.write("<br>");//
+        // document.write(x[0]);//bhavesh
+        // document.write("<br>");//
+        // document.write(x[1]);//23
+        // document.write("<br>");//
+        // document.write(x[2]);//WD
+        // document.write("<br>");
+        // document.write(x[3]);//undefined
+
+        document.write(x.length);//
+        document.write("<br>");
+
+        for(key=0;key<x.length;key++)
+        {
+           // document.write(key);//0 1 2 3 
+        //    document.write("x");
+        //    document.write("[");
+        //    document.write(key);
+        //    document.write("]");
+        //    document.write("=>");
+        //     document.write(x[key]);
+        //     document.write("<br>");
+
+         document.write( "x [" + key + "] =>" +x[key] + "<br>");
+        }
+
+        // x[0] => bhavesh
+        // x[1] => bhavesh
+        // x[2] => bhavesh
+        // x[3] => bhavesh
+      
+    </script>
+    
+</body>
+</html>

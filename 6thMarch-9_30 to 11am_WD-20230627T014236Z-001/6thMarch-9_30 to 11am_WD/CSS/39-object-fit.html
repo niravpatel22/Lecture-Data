@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{box-sizing: border-box;}
+        .main 
+        {
+            height: 300px;
+            background: gray;
+            display: flex;
+        }
+
+        .main .x
+        {
+            height: 300px;
+            width: 25%;
+           border: 2px solid;
+        }
+
+        img 
+        {
+            /* object-fit:cover ; */
+            object-fit: contain;
+            /* object-fit: scale-down; */
+        }
+
+        .bg 
+        {
+            background: url(https://th.bing.com/th/id/R.2e3fc935839d0b5506229eab1d1190bf?rik=UaTTwVhMdqcLjg&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f208918-car-luxury_cars-zenvo-zenvo_st1.jpg&ehk=FK4OdXmjmcBqa5NWTWIoAyUZQNYtrJn3tzSRHQTDsbw%3d&risl=&pid=ImgRaw&r=0);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="main">
+        <div class="x"></div>
+
+        <div class="x">
+            <img src="https://th.bing.com/th/id/R.2e3fc935839d0b5506229eab1d1190bf?rik=UaTTwVhMdqcLjg&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f208918-car-luxury_cars-zenvo-zenvo_st1.jpg&ehk=FK4OdXmjmcBqa5NWTWIoAyUZQNYtrJn3tzSRHQTDsbw%3d&risl=&pid=ImgRaw&r=0" alt="" height="100%" width="100%">
+        </div>
+
+        <div class="x"></div>
+
+        <div class="x bg"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body 
+        {
+            margin: 0;
+        }
+
+        *{box-sizing: border-box;}
+        .header 
+        {
+            height: 100px;
+            width: 100%;
+            background: gray;
+
+            display: flex;
+
+            position: fixed;
+            top:0;
+        }
+
+        .logo 
+        {
+            height: 100px;
+            width: 20%;
+            background: lightblue;
+            /* float: left; */
+        }
+
+        .cname 
+        {
+            height: 100px;
+            width: 80%;
+            background: coral;
+            /* float: left; */
+        }
+
+        .nav 
+        {
+            margin-top: 100px;
+            height: 50px;
+            background: lightcoral;
+        }
+
+
+        .slider 
+        {
+            height: 400px;
+            background: lightgreen;
+        }
+
+
+        .content 
+        {
+            height: 400px;
+            background: lightsalmon;
+            display: flex;
+            position: sticky;
+            top:100px;
+        }
+
+        .p1 
+        {
+            height: 400px;
+            width: 25%;
+            /* background: red; */
+            border: 2px solid;
+        }
+
+        .parts
+        {
+            display: flex;
+        }
+
+        .parts .x 
+        {
+            height: 400px;
+            width: 50%;
+            /* background: red; */
+            border: 2px solid;
+        }
+
+        .x .y 
+        {
+            height: 50%;
+            border: 3px solid;
+        }
+
+       
+
+
+        .footer 
+        {
+            height: 100px;
+            background: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">logo</div>
+        <div class="cname">Company Name</div>
+    </div>
+
+
+    <div class="nav">navbar</div>
+    <div class="slider">slider</div>
+
+    <div class="content">
+        <div class="p1">part 1</div>
+        <div class="p1">part 2</div>
+
+        <div class="p1 parts">
+            <div class="x"></div>
+
+
+             <div class="x">
+                <div class="up y">up</div>
+                <div class="down y">down</div>
+             </div>
+           
+        </div>
+
+
+        <div class="p1">part 4</div>
+    </div>
+
+    <div class="footer">Footer</div>
+    <div class="x"></div>
+    
+</body>
+</html>

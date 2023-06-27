@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="" alt="" height="100px" width="100px" id="i1" onclick="changeImage()">
+    
+    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqI3?ver=a8c2" alt="" height="100px" width="100px" id="i2">
+
+    <button onclick="getImage()">Get Image</button>
+    <button onclick="changeImage()">Change Image</button>
+
+    <script>
+
+        img1 = document.getElementById('i1');
+        img2 = document.getElementById('i2');
+
+       function getImage()
+       {
+        img1.src = "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqI3?ver=a8c2";
+       }
+
+   function changeImage()
+   {
+    img2.src ="https://zem.outbrainimg.com/p/srv/sha/4b/b2/29/e8277087d10eb5a1492b1d2bc6d36f06b8.jpg?w=300&h=157&fit=crop&crop=center&thomcrop&q=45&fm=jpg&gam=20&testgroup";
+   }
+
+
+    </script>
+</body>
+</html>

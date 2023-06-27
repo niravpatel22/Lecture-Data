@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aman 
+        {
+            animation: t 3s;
+        }
+
+        @keyframes t 
+        {
+            from{transform: scale(1);}
+            to{transform: scale(1.4);}
+        }
+
+        .main 
+        {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/608a44626e267c0d0173eed7b3c94c4abfe71d73/big-e59017365a81dc5b016a6034d0b494d3.jpg" alt="" class="x" height="500px" width="100%">
+
+    <img src="https://rishikeshdaytour.com/blog/wp-content/uploads/2022/01/Trekking-in-Uttarakhand-Himalayas-of-India.jpg" alt="" class="x" height="500px" width="100%">
+
+    <img src="https://c.ndtvimg.com/2022-05/7k56n09_trekking_625x300_27_May_22.jpg" alt="" class="x" height="500px" width="100%">
+
+    <img src="https://cdn-adventures-live.azureedge.net/adventurescache/9/6/c/b/d/2/96cbd25db0b041d53d50c39df72dc022ab599684.jpg" alt="" class="x" height="500px" width="100%">
+    </div>
+
+
+
+    <script>
+
+index =0;
+
+       function slider()
+       {
+        
+
+            // img_arr = [12,34,"t"]
+            img_arr = document.getElementsByClassName('x');
+
+            console.log(img_arr);
+
+            // img_arr[0].style.display = "none";
+            // img_arr[1].style.display = "none";
+            // img_arr[2].style.display = "none";
+            // img_arr[3].style.display = "none";
+
+
+            for(let i=0;i<img_arr.length;i++)
+            {
+                img_arr[i].style.display = "none";
+            }
+
+            // document.write(i);//cant find
+
+
+            img_arr[index].style.display = "block";
+
+            img_arr[index].classList.add('aman');
+            index++;//
+            
+            if(index==img_arr.length)
+            {
+                index=0;
+            }
+            
+         
+
+      
+        setTimeout("slider()",1000);
+
+
+        }
+
+        slider()
+
+    
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .x 
+        {
+            height: 400px;
+            width: 650px;
+            background: gray;
+            overflow: hidden;
+            position: relative;
+           
+        }
+
+        img 
+        {
+            transition: .5s;
+        }
+        .x:hover img
+        {
+            transform: scale(1.1);
+        }
+
+        .playBtn 
+        {
+            height: 50px;
+            width: 50px;
+            background: lightblue;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            z-index: 0;
+
+        }
+        .effect 
+        {
+            height: 50px;
+            width: 50px;
+            background: lightblue;
+            opacity: 1;
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: -1;
+            
+            border-radius: 50%;
+
+        }
+        .playBtn:hover .effect 
+        {
+            transform: scale(1.4);
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .playBtn:hover 
+        {
+            background: #000;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="x">
+        
+        <img src="https://radiustheme.com/demo/wordpress/themes/neeon/wp-content/uploads/2022/08/movie_07-960x520.jpg" alt="" height="100%" width="100%">
+
+        <div class="playBtn">
+
+            <i class="fa fa-play" aria-hidden="true"></i>
+            <div class="effect"></div>
+        </div>
+
+        
+    </div>
+
+   
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main 
+        {
+            height: 100px;
+            width: 100px;
+            margin: 200px auto;
+            background: #fff;
+            position: relative;
+
+            overflow: hidden; 
+            border-radius: 50%;
+
+
+        }
+
+        .effect 
+        {
+            height: 200px;
+            width: 200px;
+            /* background: linear-gradient(red,blue); */
+
+            background: conic-gradient(transparent 0deg,transparent 90deg,transparent 90deg,transparent 180deg,blue 220deg,blue 270deg,transparent 270deg,transparent 360deg);
+            
+            position: absolute;
+            top:-50%;
+            left:-50%;
+            border-radius: 50%;
+           
+            
+        }
+
+
+
+    
+
+        .box 
+        {
+            height: 80px;
+            width: 80px;
+            background: #fff;
+
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+        }
+
+        .dot 
+        {
+            height: 10px;
+            width:10px;
+            background: blue;
+            position: absolute;
+            top:48%;
+            lefT:50px;
+            border-radius: 50%;
+        }
+
+        .main:hover .effect 
+        {
+            transform: rotate(360deg);
+        }
+
+        h1::after {
+            content: url(https://www.shutterstock.com/image-vector/download-icon-black-simple-design-260nw-1715072377.jpg);
+        }
+      
+    </style>
+</head>
+<body>
+
+    <h1>
+
+    </h1>
+
+    <div class="main">
+
+        <div class="effect">
+            <div class="dot"></div>
+        </div>
+        <div class="box"></div>
+
+      
+
+       
+
+
+    </div>
+    
+</body>
+</html>

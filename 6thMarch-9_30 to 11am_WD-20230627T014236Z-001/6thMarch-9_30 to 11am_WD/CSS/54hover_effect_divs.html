@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main 
+        {
+            height: 150px;
+            width: 300px;
+            background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg);
+            background-size: 100% 100%;
+            margin:100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .x 
+        {
+            height: 150px;
+            width: 300px;
+            background: rgba(0,0,0,.14);
+            position: absolute;
+            top:-100%;
+            left:100%;
+            transition: .41s;
+
+            /* transform: translate(-100% , 100%); */
+        }
+
+        .y 
+        {
+            height: 150px;
+            width: 300px;
+            background: rgba(0,0,0,.14);
+            position: absolute;
+            top:100%;
+            left:-100%;
+            transition: .41s;
+
+            /* transform: translate(100%,-100%); */
+        }
+
+        .main:hover .x 
+        {
+            transform: translate(-100% , 100%);
+        }
+
+
+        .main:hover .y 
+        {
+            transform: translate(100%,-100%);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main"> 
+        <div class="x"></div>
+        <div class="y"></div>
+    </div>
+    
+    
+</body>
+</html>

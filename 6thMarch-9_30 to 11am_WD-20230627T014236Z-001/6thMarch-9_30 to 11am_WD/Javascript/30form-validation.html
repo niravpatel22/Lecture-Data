@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form onsubmit="return validate()">
+
+    
+    Name: <input type="text" id="nm">
+            <span id="nmErr"></span>
+    <br><br>
+
+    Mobile: <input type="text" id="mb"> <br><br>
+
+    <!-- <input type="submit" onclick="validate()"> -->
+
+    <input type="submit">
+</form>
+
+    
+
+
+    <script>
+
+        name1 = document.getElementById('nm');
+        nmSpan = document.getElementById('nmErr');
+        mobile = document.getElementById('mb');
+
+       
+
+        function validate()
+        {
+            if( name1.value == "")
+            {
+                // alert("Name Required...!");
+                nmSpan.innerHTML ="*Required...!";
+                nmSpan.style.color ="red";
+                name1.style.border ="2px solid red";
+                return false;
+            }
+            else
+            {
+                nmSpan.innerHTML ="";
+                name1.style.border ="2px solid green";
+            }
+
+            if( mobile.value == "")
+            {
+                alert("Mobile Required...!");
+                return false;
+            }
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>

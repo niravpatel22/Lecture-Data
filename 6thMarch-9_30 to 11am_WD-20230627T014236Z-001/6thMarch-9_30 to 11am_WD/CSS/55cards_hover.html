@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{box-sizing: border-box;}
+        .category 
+        {
+            /* height: 50px; */
+            background: lightblue;
+            padding: 25px 0;
+          
+
+        }
+
+        ul 
+        {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        li 
+        {
+            display: inline;
+            margin-right: 30px;
+            background: gray;
+            border: 2px solid;
+            position: relative;
+            
+            padding: 4px 9px;
+
+
+            
+        }
+
+        .men
+        {
+            height: 300px;
+            background: gray;
+            display: flex;
+            position: absolute;
+            top:100%;
+            left:0;
+            opacity: 0;
+           
+        }
+
+        
+        .men .x
+        {
+            height: 300px;
+            width: 300px;
+            background: lightblue;
+            border: 2px solid;
+        }
+
+        .women 
+        {
+            height: 300px;
+            background: gray;
+            display: flex;
+            position: absolute;
+            top:100%;
+            left:0;
+            opacity: 0;
+        }
+
+
+        .women .x
+        {
+            height: 300px;
+            width: 100px;
+            background: lightblue;
+            border: 2px solid;
+        }
+
+        .m:hover .men 
+        {
+            opacity: 1;
+        }
+        .w:hover .women 
+        {
+            opacity: 1;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="category">
+
+        <ul>
+            <li class="m">
+                Men
+
+                <div class="men">
+                    <div class="x">x1</div>
+                    <div class="x">x2</div>
+                    <div class="x">x3</div>
+                    <div class="x">x4</div>
+                </div>
+            </li>
+
+
+
+            <li class="w">
+                Women
+                <div class="women">
+                    <div class="x">y1</div>
+                    <div class="x">y2</div>
+                    <div class="x">y3</div>
+                    <div class="x">y4</div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+  
+
+    
+    
+</body>
+</html>

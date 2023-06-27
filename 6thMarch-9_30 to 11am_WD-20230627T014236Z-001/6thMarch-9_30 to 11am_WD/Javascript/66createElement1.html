@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <div id="parent">
+            <p>para 1</p>
+            <p id="p2">para 2</p>
+            <p>para 3</p>
+<!-- 
+            <h1>hello</h1> -->
+        </div>
+
+        <button class="btn"> CLICK ME</button>
+
+
+        <script>
+
+            btn_tag = document.querySelector('.btn');
+
+            p2_tag = document.getElementById('p2');
+
+            div = document.getElementById('parent');
+
+            h1_tag = document.createElement('h1'); //<h1></h1>
+
+           txt =  document.createTextNode("This is h1 through JS..!");//Hello<u> Kinjal</u>
+
+
+         h1_tag.append(txt);// <h1>Hello</h1>
+
+         btn_tag.addEventListener("click",getEle)
+
+      function getEle()
+      {
+        // div.appendChild(h1_tag);
+
+        div.insertBefore(h1_tag, p2_tag);
+      }
+
+    
+
+        
+
+
+        </script>
+
+    
+</body>
+</html>

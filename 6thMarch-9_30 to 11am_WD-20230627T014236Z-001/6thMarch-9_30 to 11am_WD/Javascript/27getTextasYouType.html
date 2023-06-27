@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <input type="text" id="inp" onkeypress="test()"> -->
+
+
+    <input type="text" id="inp" onkeyup="test()">
+
+    <textarea name="" id="txt" cols="30" rows="10"></textarea>
+
+    <button ondblclick=" test()">Click Me</button>
+
+    <script>
+        i = document.getElementById('inp');
+        textarea = document.getElementById('txt');
+
+       // document.write(i.value)
+
+
+       function test()
+       {
+        textarea.innerHTML = i.value;
+       }
+      
+
+
+    </script>
+    
+</body>
+</html>

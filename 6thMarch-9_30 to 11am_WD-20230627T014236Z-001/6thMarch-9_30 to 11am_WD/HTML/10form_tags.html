@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+
+
+        <!-- pattern = "[a-zA-Z]+" -->
+
+        <!-- Text/Name :<input type="text" placeholder="Enter your name" required pattern="[a-zA-Z]+" title="Only letters...!"> <br><br> -->
+
+        Text/Name :<input type="text" placeholder="Enter your name" required pattern="[a-zA-Z]{3,5}" title="min 3 and max 5 letters...!"> <br><br>
+
+
+
+
+
+        Email: <input type="email"> <br><br>
+        Password: <input type="password"> <br><br>
+        Date:<input type="date"> <br><br>
+        Date-Time:<input type="datetime-local"> <br><br>
+        Color:<input type="color"> <br><br>
+
+
+        Country:
+
+        <select>
+            <!-- <option disabled> --- Select your Country --- </option> -->
+
+            <option hidden> --- Select your Country --- </option>
+            <option> India </option>
+            <option selected> USA </option>
+            <option> UAE </option>
+            <option> Australia </option>
+
+        </select>
+
+        <br><br>
+
+        Gender:
+        
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        
+        
+        <br><br>
+
+        Languages:
+
+        <input type="checkbox"> Hindi
+        <input type="checkbox"> Gujarati
+        <input type="checkbox"> English
+        <input type="checkbox"> Tamil
+
+        <br><br>
+
+        Quantity:<input type="number"> <br><br>
+
+        <!-- Mobile:<input type="text" placeholder="Enter mobile" required pattern="[0-9]+" title="Numbers only...!"> <br><br> -->
+
+        <!-- Mobile:<input type="text" placeholder="Enter mobile" required pattern="[0-9]+" title="Numbers only...!"> <br><br> -->
+
+        Mobile:<input type="text" placeholder="Enter mobile" required pattern="[0-9]{10}" title="10 digits  only...!"> <br><br>
+
+        Upload an Image:<input type="file"> <br><br>
+        
+        <textarea rows="5" cols="40"></textarea>
+
+
+        <br><br>
+        
+        <input type="submit" value="Sign up"> <br><br>
+        <input type="reset" value="Khali karnebhai form"> <br><br>
+        
+    </form>
+    
+</body>
+</html>

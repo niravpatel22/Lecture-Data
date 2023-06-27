@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+
+    <style>
+
+        .main *
+        {
+            border:3px solid red;
+            padding: 35px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    
+
+   
+
+    <div class="main">
+        <div class="gp">Grandparent
+            <ul>UL
+                <li>LI 
+                    <span>SPAN</span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script>
+
+
+$(document).ready(function (){
+
+
+      // $('span').parents().css("border","2px solid gray");
+
+        // $('span').parents('ul').css("border","9px solid gray");
+
+        // $('span').parentsUntil(".gp").css("border","2px solid gray");
+
+        // $('span').parent().css("border","2px solid gray");
+
+        $(document).click(function test()
+        {
+            $('.gp').children().css("background","gray");
+
+        $('.gp').children('ul').css("background","green");
+
+        $('.gp').find('li').css("background","red");
+
+        $('.gp').find('span').css("background","pink");
+        })
+})
+      
+
+      
+
+
+    </script>
+
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+

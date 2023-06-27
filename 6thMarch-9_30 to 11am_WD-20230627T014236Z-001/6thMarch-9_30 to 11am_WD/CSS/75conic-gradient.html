@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+
+		body 
+		{
+			background: #000;
+		}
+		.x 
+		{
+			height: 100px;
+			width: 100px;
+			background: gray;
+			float: left;
+			margin: 15px;
+			border-radius: 50%;
+			border: 2px solid gray;
+			background:transparent;
+		}
+
+		#b1 
+		{
+			background: conic-gradient(red,blue,yellow);
+		}
+
+		#b2
+		{
+			background: conic-gradient(from 45deg,red,blue,yellow);
+		}
+
+		#b3
+		{
+			background: 
+			conic-gradient(red 0deg,red 90deg,blue,yellow);
+		}
+
+		#b4
+		{
+			background: 
+			conic-gradient(red 0deg,red 90deg,yellow 90deg, yellow 180deg,blue);
+		}
+
+		#b5
+		{
+			background: 
+			repeating-conic-gradient(red 0deg,red,20deg,yellow 20deg,yellow 30deg);
+		}
+
+        #b6
+		{
+			background: 
+			repeating-conic-gradient(transparent 0deg,transparent 20deg,blue 20deg,blue 30deg);
+
+            background-color:lightblue;
+            background-size: 30px 30px;
+		}
+
+        #b7
+		{
+			background:conic-gradient(red,blue,green,yellow,red);
+
+           
+		}
+		
+		
+	</style>
+</head>
+<body>
+	
+
+	<div class="x" id="b1"></div>
+	<div class="x" id="b2"></div>
+	<div class="x" id="b3"></div>
+	<div class="x" id="b4"></div>
+	<div class="x" id="b5"></div>
+	<div class="x" id="b6"></div>
+    <div class="x" id="b7"></div>
+</body>
+</html>

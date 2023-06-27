@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body 
+        {
+            background: #000;
+        }
+        .main 
+        {
+            height: 350px;
+            width: 650px;
+            /* background: gray; */
+            margin: 100px auto;
+            position: relative;
+            
+        }
+        .card 
+        {
+            height: 350px;
+            width: 650px;
+            background: url(asfalt-light.png);
+            background-size: contain;
+            /* z-index: -1; */
+            position: absolute;
+            top:0;
+            left:0;
+            backdrop-filter: blur(5px);
+            color: #fff;
+            
+        }
+        .circle1 
+        {
+            height: 100px;
+            width: 100px;
+            background: linear-gradient(red,blue);
+            border-radius: 50px;
+            position: absolute;
+            top:-10%;
+            left:35%;
+            z-index: -1;
+            
+        }
+        .circle2
+        {
+            height: 200px;
+            width: 200px;
+            background: linear-gradient(red,black);
+            border-radius: 50%;
+            position: absolute;
+            top:-100px;
+            left:80%;
+            z-index: -1;
+        }
+        .circle3 
+        { height: 150px;
+            width: 150px;
+            background: linear-gradient(green,blue);
+            border-radius: 50%;
+            position: absolute;
+            top:80%;
+            left:-10%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="card">
+            Membership
+        </div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+    </div>
+</body>
+</html>

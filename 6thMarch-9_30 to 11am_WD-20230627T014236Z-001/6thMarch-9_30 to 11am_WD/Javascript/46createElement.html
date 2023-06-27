@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="t">
+        <p>sdf 1</p>
+        <!-- <p>sdf 2</p> -->
+    </h1>
+
+    <script>
+        h1_tag = document.getElementById('t');
+
+       p_tag = document.createElement('p');// <p></p>
+       
+       txt = document.createTextNode("sdf 2");// sdf 2
+
+       p_tag.append( txt);//<p>sdf 2</p>
+
+       h1_tag.append( p_tag);
+       
+       
+      
+    </script>
+    
+</body>
+</html>

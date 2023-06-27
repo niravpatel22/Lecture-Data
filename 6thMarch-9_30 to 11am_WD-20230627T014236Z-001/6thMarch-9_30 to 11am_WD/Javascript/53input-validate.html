@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Name:
+    <input type="text" id="nm" >
+    <span id="res"></span>
+
+
+    <br><br>
+    <input type="submit" onclick="validate()">
+
+    <script>
+
+        name1 = document.getElementById('nm');
+        nmSpan = document.getElementById('res');
+
+        console.log(name1);
+        console.log(name1.value);
+
+            
+
+       nm_exp =  /^[a-zA-Z]+$/;
+
+
+
+
+      function validate()
+      {
+        if(name1.value == "")
+        {
+            nmSpan.innerHTML = "* required...!";
+            nmSpan.style.color="red";
+        }
+
+        else if(!nm_exp.test(name1.value))
+            {
+                nmSpan.innerHTML="Letters...!";
+            }
+
+            else 
+            {
+                nmSpan.innerHTML="";
+            }
+      }
+
+      
+
+
+    </script>
+
+    
+</body>
+</html>

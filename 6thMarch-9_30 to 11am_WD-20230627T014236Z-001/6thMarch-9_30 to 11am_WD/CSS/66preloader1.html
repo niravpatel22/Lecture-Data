@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            box-sizing: border-boxp;padding: 0;margin: 0;
+        }
+        .x 
+        {
+            height: 200px;
+            width: 200px;
+            background: transparent;
+            border: 10px solid transparent;
+            border-top: 10px solid green;
+            animation: test1 1s infinite;
+            position: absolute;
+            top:0;
+            left:0;
+
+            border-radius: 50%;
+        }
+
+       
+
+
+        .y
+        {
+            height: 150px;
+            width: 150px;
+            background: transparent;
+            border: 10px solid transparent;
+            border-top: 10px solid red;
+            animation: test2 1.2s infinite;
+            position: absolute;
+            top:25px;
+            left:25px;
+            border-radius: 50%;
+        }
+
+
+        .z 
+        {
+            height: 100px;
+            width: 100px;
+            background: transparent;
+            border: 10px solid transparent;
+            border-top: 10px solid blue;
+            animation: test1 1.4s infinite;
+            position: absolute;
+            top:50px;
+            left:50px;
+            border-radius: 50%;
+        }
+
+        .a 
+        {
+            height: 50px;
+            width: 50px;
+            background: transparent;
+            border: 10px solid transparent;
+            border-top: 10px solid yellow;
+            animation: test2 1.6s infinite;
+            position: absolute;
+            top:75px;
+            left:75px;
+            border-radius: 50%;
+        }
+        @keyframes test1 
+        {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+        @keyframes test2 
+        {
+            from{transform: rotate(360deg);}
+            to{transform: rotate(0deg);}
+        }
+
+        .main 
+        {
+            height: 200px;
+            width: 200px;
+            background-color: transparent;
+            margin: 50px auto;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="main">
+    <div class="x"></div>
+    <div class="y"></div>
+    <div class="z"></div>
+    <div class="a"></div>
+  </div>
+  
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::first-letter 
+        {
+            background: #000;
+            color: #fff;
+        }
+
+        p::first-line 
+        {
+            background: lightblue;
+        }
+
+        h3::after 
+        {
+            content: " after";
+        }
+        
+        h3::before 
+        {
+            content: "before 98798 (*&*( )) ";
+            /* background: url(''); */
+        }
+
+        h5::after
+        {
+            content: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqHW?ver=f338);
+        }
+
+        h5::before 
+        {
+            content: "\26F2";
+        }
+
+        ::selection 
+        {
+            background: #000;
+            color: #fff;
+        }
+
+        input::placeholder
+        {
+            color: red;
+        }
+
+        div 
+        {
+            height: 200px;
+            width: 200px;
+            background: green;
+            display: block;
+        }
+
+        a 
+        {
+            height: 200px;
+            width: 200px;
+            background: gray;
+            display: inline;
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div></div>
+    <a href="">Home</a>
+
+    <input type="text" placeholder="Enter Name">
+
+    &lt;
+    <h5>
+        heading 5
+    </h5>
+    <h3>Hello</h3>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam maiores, voluptatum quibusdam harum ipsam ea aliquam placeat perspiciatis, dolor quod praesentium et dolorum? Recusandae officia, harum asperiores sint nisi aliquam!
+    </p>
+    <h1>
+        Heading 1
+    </h1>
+    <h1>
+        Heading 1
+    </h1>
+    <h1>
+        Heading 1
+    </h1>
+
+    
+</body>
+</html>

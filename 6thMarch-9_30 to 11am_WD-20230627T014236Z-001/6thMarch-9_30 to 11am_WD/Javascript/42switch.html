@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Switch: when we have multiple choices and we need output as per choice entered... 
+
+
+    Syntax:
+
+    choice =6;
+
+    switch(varName)// choice
+    {
+        case 1: code;
+        break;
+
+        case 2: code;
+        break;
+
+        case 3: code;
+        break;
+
+        case 4: code;
+        break;
+
+        default:..code;
+    } -->
+
+    <input type="text" id="inp" onkeyup="xyz()">
+
+    <h1 id="res"></h1>
+
+
+    <script>
+
+
+    i = document.getElementById('inp');
+
+    h = document.getElementById('res');
+    console.log(i);
+    console.log(i.value);
+    
+
+      function xyz()
+      {
+        ch =Number(i.value);
+
+switch(ch)
+{
+    case 1: h.innerHTML = ("case 1..!");
+    break;
+
+    case 2: h.innerHTML = ("case 2..!");
+    break;
+
+     case 3: h.innerHTM = ("case 3..!");
+     break;
+
+   default: h.innerHTML =("invalid choice...!");
+   
+
+}
+      }
+
+
+    </script>
+    
+</body>
+</html>

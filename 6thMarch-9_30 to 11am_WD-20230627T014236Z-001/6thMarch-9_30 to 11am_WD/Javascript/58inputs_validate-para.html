@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Name: <input type="text" id="nm" onblur="tst(nm,nmSpan)">
+    <span id="nmSpan"></span>
+    
+    <br><br>
+
+    Email: <input type="text" onblur="tst(em,emSpan)" id="em">
+    <span id="emSpan"></span>
+    <br><br>
+
+    
+
+    <script>
+
+        function tst(c,y)
+        {
+            // document.write(c);
+            console.log(c);//nm em
+            console.log(c.value);//nm.value em.value
+
+            console.log(y);//nmSpan em
+            console.log(y.innerHTML);//nm.value em.value
+
+            if(c.value == "")
+            {
+                y.innerHTML ="required...!";
+            }
+            else 
+            {
+                y.innerHTML ="";
+            }
+           
+        }
+        // tst(10)
+        // tst(1)
+        // tst(2)
+        
+    </script>
+    
+</body>
+</html>

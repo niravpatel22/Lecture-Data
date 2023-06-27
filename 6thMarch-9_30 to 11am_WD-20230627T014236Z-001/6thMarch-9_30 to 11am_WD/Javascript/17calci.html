@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    no1 : <input type="text" id="n1"><br><br>
+    no2 : <input type="text" name="" id="n2" >
+
+    <h1 id="res"></h1>
+
+    <button onclick="addNums()">+</button>
+    <button onclick="subNums()">-</button>
+    <button onclick="mulNums()">*</button>
+    <button onclick="divNums()">/</button>
+    <button onclick="modNums()">%</button>
+
+
+    <script>
+        num1= document.getElementById('n1');
+        num2= document.getElementById('n2');
+        h1_tag= document.getElementById('res');
+
+        console.log(num1);
+        console.log(num2);
+
+        console.log(num1.value);
+        console.log(num2.value);
+
+      function addNums()
+      {
+        // console.log( Number(num1.value)  + Number(num2.value) );
+
+        // console.log( parseInt(num1.value)  + parseInt(num2.value) );
+
+        // console.log( parseFloat(num1.value)  + parseFloat(num2.value) );
+
+        // document.write( parseFloat(num1.value)  + parseFloat(num2.value) );
+
+        h1_tag.innerHTML = parseFloat(num1.value)  + parseFloat(num2.value);
+      }
+
+
+      function subNums()
+      {
+        h1_tag.innerHTML = parseFloat(num1.value)  - parseFloat(num2.value);
+      }
+
+      function mulNums()
+      {
+        h1_tag.innerHTML = parseFloat(num1.value)  * parseFloat(num2.value);
+      }
+
+      function divNums()
+      {
+        h1_tag.innerHTML = parseFloat(num1.value)  / parseFloat(num2.value);
+      }
+
+
+      function modNums()
+      {
+        h1_tag.innerHTML = parseFloat(num1.value)  % parseFloat(num2.value);
+      }
+    </script>
+</body>
+</html>

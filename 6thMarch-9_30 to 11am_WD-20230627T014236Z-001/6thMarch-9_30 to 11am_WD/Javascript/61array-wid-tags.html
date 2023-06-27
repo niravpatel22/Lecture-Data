@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="x" class="x">heading 1</h1>
+    <h1 id="x" class="x">heading 1</h1>
+    <h1 id="x" class="x">heading 1</h1>
+    <h1 id="x" class="x">heading 1</h1>
+    
+
+    <input type="text" name="x">
+    <input type="text" name="x">
+    <input type="text" name="x">
+    <input type="text" name="x">
+    <input type="text" name="x">
+
+    <script>
+    //    h1_arr =  document.getElementById('x');
+
+        // h1_arr =document.getElementsByClassName('x');
+        
+        h1_arr =document.getElementsByTagName('h1');
+        console.log( h1_arr);
+
+        input_arr = document.getElementsByName('x');
+        console.log(input_arr);
+
+        // input_arr[1].style.border ="3px solid blue";
+
+
+        for(index=0;index<input_arr.length;index++)
+        {
+            input_arr[index].style.border ="3px solid blue";
+        }
+
+    </script>
+    
+</body>
+</html>

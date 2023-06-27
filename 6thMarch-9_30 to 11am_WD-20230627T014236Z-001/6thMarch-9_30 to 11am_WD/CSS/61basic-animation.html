@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .x 
+        {
+            height: 200px;
+            width: 200px;
+            background: gray;
+            margin: 150px auto;
+            animation-name: kaiPan;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        /* @keyframes kaiPan
+        {
+            from{ background: gray;}
+            to{ background: green;}
+        } */
+
+        @keyframes kaiPan 
+        {
+            0%{ background: gray;}
+            20%{background: transparent;}
+            40%{background: linear-gradient(red,blue); border-radius: 50%;}
+            60%{background: black;transform: rotate(360deg);}
+            80%{background: gray;transform: scale(1.4);}
+            100%{ background: blue;}
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="x">
+
+    </div>
+    
+</body>
+</html>

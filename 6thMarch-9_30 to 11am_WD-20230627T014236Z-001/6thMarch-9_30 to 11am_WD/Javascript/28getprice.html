@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- NaN : Not a Number
+
+    ==> this error will be generated when we try to 
+    perform mathematical op on a num and a string value -->
+    
+
+    Price: <input type="text" value="200" id="price">
+    <select name="" id="quantity" onchange="getPrice()">
+        
+        <option hidden> --- Select Quantity ---</option>
+        <option>1</option>
+        <option value="2">2</option>
+        <option >3</option>
+        <option value="4">4</option>
+    </select>
+
+    <b id="res"></b>
+
+    <script>
+
+        p = document.getElementById('price');
+        q = document.getElementById('quantity');
+        b = document.getElementById('res');
+
+        console.log(p);
+        console.log(p.value);//200
+        console.log(q);
+        console.log(q.value);//1
+
+        console.log(p.value * q.value);//200
+
+        // document.write(p.value * q.value);
+
+       function getPrice()
+       {
+        b.innerHTML = p.value + q.value;
+       }
+
+    </script>
+</body>
+</html>

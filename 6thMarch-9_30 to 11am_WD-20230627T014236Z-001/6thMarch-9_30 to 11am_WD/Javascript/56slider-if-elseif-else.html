@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="https://whatsondisneyplus.com/wp-content/uploads/2020/05/Cars-scaled.jpg" alt="No image" height="400px"  width="100%" id="t" onclick="changeImg()">
+
+    <button onclick="changeImg()">></button>
+
+    <script>
+
+        img_tag = document.getElementById('t');
+
+    //    alert( img_tag.src );
+
+    //document.write(img_tag.src);
+
+    //    if(img.src == 'images/banner3.jpg')
+    //     {
+    //         img_tag.src = "images/w.jpeg";
+    //     }
+
+   function changeImg()
+   
+   {
+
+    if(img_tag.src.match("https://whatsondisneyplus.com/wp-content/uploads/2020/05/Cars-scaled.jpg"))
+        {
+            img_tag.src = "https://th.bing.com/th/id/R.5f34576a29ba51e0f01ff6ee5c133ca5?rik=LirftfFNolBHQA&riu=http%3a%2f%2fdigitalsynopsis.com%2fwp-content%2fuploads%2f2014%2f06%2fsupercar-wallpapers-pagani-2.jpg&ehk=N6ddj4AjP9wBOHuWwMTGEUP%2bFh4tJBR4ZH4mJW732xM%3d&risl=&pid=ImgRaw&r=0";
+        }
+
+        else if(img_tag.src.match("https://th.bing.com/th/id/R.5f34576a29ba51e0f01ff6ee5c133ca5?rik=LirftfFNolBHQA&riu=http%3a%2f%2fdigitalsynopsis.com%2fwp-content%2fuploads%2f2014%2f06%2fsupercar-wallpapers-pagani-2.jpg&ehk=N6ddj4AjP9wBOHuWwMTGEUP%2bFh4tJBR4ZH4mJW732xM%3d&risl=&pid=ImgRaw&r=0"))
+        {
+            img_tag.src = "https://4.bp.blogspot.com/-lXQq9VvY_io/VMEfvWF0sGI/AAAAAAAABDs/jMqf72-4sMk/s1600/CHEVROLET%2BCORVETTE%2BZ06%2BThe%2BBest%2BNew%2BCar%2B2015.jpg";
+        }
+
+        else 
+        {
+            img_tag.src = "https://whatsondisneyplus.com/wp-content/uploads/2020/05/Cars-scaled.jpg";
+        }
+
+        setTimeout("changeImg()",1000);
+   }
+
+
+   changeImg();
+   
+
+
+    </script>
+    
+</body>
+</html>

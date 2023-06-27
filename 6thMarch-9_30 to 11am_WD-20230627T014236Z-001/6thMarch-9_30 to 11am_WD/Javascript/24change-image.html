@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button 
+        {
+            position: absolute;
+            top:50%;
+            right:5%;
+
+            border: none;
+            padding: 10px 20px;
+            font-size: 35px;
+            font-weight: bold;
+            color: #fff;
+            background: transparent;
+            box-shadow: 0 0 20px #fff inset;
+            border-radius: 5px;
+            
+        }
+
+        div
+        {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <img src="1.png" alt="" height="500px" width="100%" id="i1">
+
+
+        <button onclick=" test()">></button>
+
+    </div>
+
+   
+
+   <h2 id="i2">
+    hello
+   </h2>
+
+    <script>
+        img1 = document.getElementById('i1');
+        h2 = document.getElementById('i2');
+
+    //   img1.src = "2.png";
+    //   h2.innerHTML = "test"
+
+        console.log(h2.innerHTML);
+
+        console.log(img1.src);
+        //http://127.0.0.1:5500/1.png
+
+       
+
+        // function test()
+        // {
+
+        //     if(img1.src == "http://127.0.0.1:5500/1.png" )
+        //     {
+        //         img1.src = "2.png";
+        //     }
+
+        // }
+
+
+        function test()
+        {
+
+            if(img1.src.match( "1.png") )
+            {
+                img1.src = "2.png";
+            }
+
+            else if(img1.src.match( "2.png"))
+            {
+                img1.src = "3.png";
+            }
+
+            else if(img1.src.match( "3.png"))
+            {
+                img1.src = "4.png";
+            }
+
+            
+            else 
+            {
+                img1.src = "1.png";
+            }
+
+           setTimeout(" test()",1000);
+
+        }
+
+        test()
+
+       
+
+
+        
+
+
+       
+
+
+    </script>
+    
+</body>
+</html>

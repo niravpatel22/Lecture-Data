@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test 
+        {
+            height: 200px;
+            width: 350px;
+            background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW10ZNG?ver=fda3);
+
+            background-size: 100% 100%;
+            background-position: center;
+            overflow: hidden;
+            position: relative;
+            transition: 1s;
+        }
+
+        .test:hover 
+        {
+            background-size: 120% 120%;
+        }
+
+        .test::after
+        {
+            content:"";
+
+            height: 400px;
+            width: 100px;
+            background: transparent;
+
+            box-shadow: 0 0 50px gray inset;
+            position: absolute;
+            top:0;
+            left:100%;
+            transition: 1s;
+        }   
+
+        .test::before 
+        {
+            content: "";
+            height: 200px;
+            width: 350px;
+            background: rgba(0,0,0,.5);
+            position: absolute;
+            top:0;
+            left:150%;
+            transition: 1s;
+        }
+
+        .test:hover::after
+        {
+            left:0;
+        }
+        .test:hover::before
+        {
+            left:50%;
+        }
+
+        .blink 
+        {
+            height: 30px;
+            width: 20px;
+            background: #000;
+
+            animation: test .31s infinite;
+        }
+
+        @keyframes test 
+        {
+            from{opacity: 1;}
+            to{opacity: 0;}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="blink"></div>
+
+
+    <div class="test">
+        <!-- <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW10ZNG?ver=fda3" alt="" height="100%" width="100%"> -->
+
+        <!-- <div class="x"></div>
+        <div class="y"></div> -->
+    </div>
+    
+
+  
+    
+</body>
+</html>

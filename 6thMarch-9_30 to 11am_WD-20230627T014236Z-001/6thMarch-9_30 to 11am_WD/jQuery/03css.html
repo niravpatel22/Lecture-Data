@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+        .xyz 
+        {
+            height: 100px;
+            width: 100px;
+            background: gray;
+        }
+
+        div 
+        {
+            max-height: 500px;
+            max-width: 500px;
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+
+    </div>
+    <h1>hello</h1>
+
+    <button id="b1">Add CSS</button>
+    <button id="b2">Remove CSS</button>
+    <button id="b3">Add/Remove CSS</button>
+
+    <script>
+
+        // $(selector).css("property","value")
+        // $('h1').css("color","red");
+        // $('h1').css("background","lightblue")
+        // $('h1').css("height","200px")
+        // $('h1').css("width","200px");
+        // $('h1').css("font-size","45px")
+
+        $('#b1').click( function addCSS()
+        {
+            $('h1').addClass('xyz');
+        })
+
+        $('#b2').click( ()=>
+        {
+            $('h1').removeClass('xyz');
+        })
+
+        $('#b3').click( ()=>
+        {
+            $('h1').toggleClass('xyz');
+        })
+
+    //    $(selector).css({"property":"value","property":"value"})
+
+        $('h1').html("BHavesh<u>123</u>")
+       
+        $('h1').css({"background":"lightblue","color":"red"})
+    </script>
+    
+</body>
+</html>

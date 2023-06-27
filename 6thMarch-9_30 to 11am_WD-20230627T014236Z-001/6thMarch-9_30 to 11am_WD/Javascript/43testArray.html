@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="x" class="x">heading 1</h1>
+    <h1 id="x" class="x">heading 2</h1>
+    <h1 id="x" class="x">heading 3</h1>
+    <h1 id="x" class="x" >heading 4</h1>
+
+    <h1 id="x" class="x">heading 1</h1>
+    <h1 id="x" class="x">heading 2</h1>
+    <h1 id="x" class="x">heading 1</h1>
+    <h1 id="x" class="x">heading 2</h1>
+    <h1 id="x" class="x">heading 3</h1>
+    <h1 id="x" class="x" >heading 4</h1>
+
+    <h1 id="x" class="x">heading 1</h1>
+    <h1 id="x" class="x">heading 2</h1>
+    
+    <script>
+     //  h1_tag = document.getElementById('x');
+
+//    h1_tag = document.getElementsByClassName('x');
+
+h1_tag = document.getElementsByTagName('h1');
+
+       console.log(h1_tag);
+    //    h1_tag[0].style.color ="red";
+    //    h1_tag[1].style.color ="red";
+    //    h1_tag[2].style.color ="red";
+    //    h1_tag[3].style.color ="red";
+       
+    //    document.write(h1_tag.length);
+
+       for(i=0;i<h1_tag.length;i++)
+       {
+            //document.write(i +" ");// 0 1 2 3
+            h1_tag[i].style.color ="red";
+       }
+
+
+
+    </script>
+    
+</body>
+</html>
